@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CirculoCuadradoTriangulo.png-8e4345a20fad60b1502585ddbaffd2f8.stex"
+path="res://.import/Background.png-96bb9f9c1690526a627edb74889b3497.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CirculoCuadradoTriangulo.png"
-dest_files=[ "res://.import/CirculoCuadradoTriangulo.png-8e4345a20fad60b1502585ddbaffd2f8.stex" ]
+source_file="res://_main/sprites/Background.png"
+dest_files=[ "res://.import/Background.png-96bb9f9c1690526a627edb74889b3497.stex" ]
 
 [params]
 

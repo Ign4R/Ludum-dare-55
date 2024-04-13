@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CirculoCuadradoTriangulo - copia.png-ef180d90b78584ecdbba23d291b36f51.stex"
+path="res://.import/Verde.png-025a92ece380d134e22c7c103514d11f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://CirculoCuadradoTriangulo - copia.png"
-dest_files=[ "res://.import/CirculoCuadradoTriangulo - copia.png-ef180d90b78584ecdbba23d291b36f51.stex" ]
+source_file="res://_main/sprites/Verde.png"
+dest_files=[ "res://.import/Verde.png-025a92ece380d134e22c7c103514d11f.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

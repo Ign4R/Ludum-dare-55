@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/LayoutBG.png-82aaa242530589598c40a5bee01241b2.stex"
+path="res://.import/VerdeParaTorreta.png-c5b9cbf7198a7f13aa850374bdb9eec8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://LayoutBG.png"
-dest_files=[ "res://.import/LayoutBG.png-82aaa242530589598c40a5bee01241b2.stex" ]
+source_file="res://_main/sprites/VerdeParaTorreta.png"
+dest_files=[ "res://.import/VerdeParaTorreta.png-c5b9cbf7198a7f13aa850374bdb9eec8.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=true
+flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
