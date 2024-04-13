@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Circulo.png-1f5ed6b44ce011fdd1dd98df1070d972.stex"
+path="res://.import/Cuadrado.png-898847f72441bd4d3098394ac95d5504.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_main/sprites/Circulo.png"
-dest_files=[ "res://.import/Circulo.png-1f5ed6b44ce011fdd1dd98df1070d972.stex" ]
+source_file="res://_main/sprites/CartasDeSlimes/Cuadrado.png"
+dest_files=[ "res://.import/Cuadrado.png-898847f72441bd4d3098394ac95d5504.stex" ]
 
 [params]
 

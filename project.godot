@@ -8,6 +8,22 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "Slime",
+"language": "GDScript",
+"path": "res://_main/scenes/Slimes/SlimeCaldera.gd"
+}, {
+"base": "Node",
+"class": "gameManager",
+"language": "GDScript",
+"path": "res://_main/Scripts_/GameManager.gd"
+} ]
+_global_script_class_icons={
+"Slime": "",
+"gameManager": ""
+}
+
 [application]
 
 config/name="Nuevo Juego"

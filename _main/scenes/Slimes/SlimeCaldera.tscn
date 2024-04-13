@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://_main/sprites/Slimes/SlimeCaldera.png" type="Texture" id=1]
+[ext_resource path="res://_main/scenes/Slimes/SlimeCaldera.gd" type="Script" id=2]
+
+[node name="SlimeA" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="SlimeCaldera" type="Sprite" parent="."]
+position = Vector2( 422, 746 )
+texture = ExtResource( 1 )

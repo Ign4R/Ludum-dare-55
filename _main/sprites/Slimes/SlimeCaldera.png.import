@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/CirculoCuadradoTriangulo.png-16173cfb598570c49ae6b555d0f0884a.stex"
+path="res://.import/SlimeCaldera.png-cd1552d6f2c094fa461a4bc0cdbd3e2f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://_main/sprites/CirculoCuadradoTriangulo.png"
-dest_files=[ "res://.import/CirculoCuadradoTriangulo.png-16173cfb598570c49ae6b555d0f0884a.stex" ]
+source_file="res://_main/sprites/Slimes/SlimeCaldera.png"
+dest_files=[ "res://.import/SlimeCaldera.png-cd1552d6f2c094fa461a4bc0cdbd3e2f.stex" ]
 
 [params]
 
