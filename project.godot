@@ -10,24 +10,28 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node2D",
-"class": "Slime",
-"language": "GDScript",
-"path": "res://_main/scenes/Slimes/SlimeCaldera.gd"
-}, {
-"base": "Node",
-"class": "gameManager",
+"class": "Global",
 "language": "GDScript",
 "path": "res://_main/Scripts_/GameManager.gd"
+}, {
+"base": "Node2D",
+"class": "SlimeBase",
+"language": "GDScript",
+"path": "res://_main/Scripts_/EntityBase.gd"
 } ]
 _global_script_class_icons={
-"Slime": "",
-"gameManager": ""
+"Global": "",
+"SlimeBase": ""
 }
 
 [application]
 
-config/name="Nuevo Juego"
+config/name="LudumDare"
 run/main_scene="res://_main/scenes/EscenaPrincipal.tscn"
+
+[autoload]
+
+GameManager="*res://_main/Scripts_/GameManager.gd"
 
 [display]
 

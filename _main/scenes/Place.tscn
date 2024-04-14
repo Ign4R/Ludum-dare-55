@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://_main/Scripts_/Button_Item_Invoker.gd" type="Script" id=1]
+[ext_resource path="res://_main/sprites/VerdeParaTorreta.png" type="Texture" id=2]
+[ext_resource path="res://_main/sprites/PlaceHighligh.png" type="Texture" id=3]
+[ext_resource path="res://_main/sprites/VerdeParaTorreta-redpreview.png" type="Texture" id=4]
+
+[node name="PlaceInvoker" type="Node2D"]
+
+[node name="TextureButton" type="TextureButton" parent="."]
+show_behind_parent = true
+margin_left = -48.0
+margin_top = -48.0
+margin_right = 53.0
+margin_bottom = 52.0
+texture_normal = ExtResource( 2 )
+texture_hover = ExtResource( 3 )
+texture_disabled = ExtResource( 4 )
+stretch_mode = 5
+script = ExtResource( 1 )

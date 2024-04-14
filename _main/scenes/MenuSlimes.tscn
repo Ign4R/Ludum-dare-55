@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://_main/scenes/ItemSlime.tscn" type="PackedScene" id=1]
+[ext_resource path="res://_main/scenes/SlimeArea.tscn" type="PackedScene" id=2]
+[ext_resource path="res://_main/scenes/SlimeRange.tscn" type="PackedScene" id=3]
+[ext_resource path="res://_main/sprites/Slimes/Tostada-slime.png" type="Texture" id=4]
+[ext_resource path="res://_main/sprites/Slimes/Papitas-slime.png" type="Texture" id=5]
+[ext_resource path="res://_main/sprites/LayoutBG.png" type="Texture" id=7]
+[ext_resource path="res://_main/sprites/Slimes/Pot-slime.png" type="Texture" id=9]
+[ext_resource path="res://_main/sprites/Slimes/Milkshake-Slime.png" type="Texture" id=10]
+[ext_resource path="res://_main/scenes/SlimeRangeSuper.tscn" type="PackedScene" id=12]
+[ext_resource path="res://_main/scenes/SlimeAreaSuper.tscn" type="PackedScene" id=13]
+
+[node name="MenuSelection" type="CanvasLayer"]
+
+[node name="LayoutBg" type="Sprite" parent="."]
+position = Vector2( 956, 967 )
+scale = Vector2( 1.13294, 1.44156 )
+texture = ExtResource( 7 )
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+anchor_left = 0.00260417
+anchor_top = 0.785185
+anchor_right = 1.0099
+anchor_bottom = 0.987963
+margin_left = -8.00001
+margin_top = 13.0002
+margin_right = -25.0079
+margin_bottom = 12.9999
+rect_pivot_offset = Vector2( 5, 0 )
+custom_constants/separation = 243
+alignment = 1
+
+[node name="SlimeA" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 154.0
+margin_right = 374.0
+margin_bottom = 219.0
+slime = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA"]
+position = Vector2( 60, 76 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 9 )
+
+[node name="SlimeA2" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 617.0
+margin_right = 837.0
+margin_bottom = 219.0
+slime = ExtResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA2"]
+position = Vector2( 61, 55 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 5 )
+
+[node name="SlimeA3" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 1080.0
+margin_right = 1300.0
+margin_bottom = 219.0
+slime = ExtResource( 13 )
+
+[node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA3"]
+position = Vector2( 51, 42 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 10 )
+
+[node name="SlimeA4" parent="HBoxContainer" instance=ExtResource( 1 )]
+margin_left = 1543.0
+margin_right = 1763.0
+margin_bottom = 219.0
+slime = ExtResource( 12 )
+
+[node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA4"]
+position = Vector2( 62, 66 )
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 4 )
