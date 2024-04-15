@@ -7,4 +7,8 @@ func attack(body):
 	print("ejecutar ataque de slime")
 
 func _on_Area2D_body_entered(body):
-	print(body)
+	if body.is_in_group("enemy"):
+		print("iniciar ataque")
+		#iniciar ataque
+
+ 

@@ -10,7 +10,7 @@ func _on_button_pressed():
 	print("slime invoked")
 	if GameManager.slime_current!=null:
 	 GameManager.instantiate_slime(node.global_position)
-	 visible=false
+	 visible = false
 
 	
 
