@@ -4,7 +4,7 @@
 [ext_resource path="res://_main/sprites/BackgroundBeta.png" type="Texture" id=2]
 
 [sub_resource type="CircleShape2D" id=1]
-radius = 35.97
+radius = 18.16
 
 [node name="TestMovimientoEnemigos" type="Node2D"]
 
@@ -23,7 +23,7 @@ wait_time = 1.5
 [node name="WayPoints" type="Node2D" parent="BackgroundBeta"]
 
 [node name="WayPoint1" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( -299.258, -20.3566 )
+position = Vector2( -293.358, -24.234 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint1"]
 shape = SubResource( 1 )
@@ -32,7 +32,7 @@ __meta__ = {
 }
 
 [node name="WayPoint2" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( -337.28, 229.739 )
+position = Vector2( -316.958, 231.031 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint2"]
 shape = SubResource( 1 )
@@ -41,7 +41,7 @@ __meta__ = {
 }
 
 [node name="WayPoint3" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( 62.6049, 229.739 )
+position = Vector2( 73.7492, 239.432 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint3"]
 shape = SubResource( 1 )
@@ -50,7 +50,7 @@ __meta__ = {
 }
 
 [node name="WayPoint4" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( 80.9602, -15.8329 )
+position = Vector2( 56.0494, -6.13928 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint4"]
 shape = SubResource( 1 )
@@ -59,7 +59,7 @@ __meta__ = {
 }
 
 [node name="WayPoint5" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( 286.802, -6.13928 )
+position = Vector2( 299.258, 10.0167 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint5"]
 shape = SubResource( 1 )
@@ -68,7 +68,7 @@ __meta__ = {
 }
 
 [node name="WayPoint6" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( 290.736, 213.583 )
+position = Vector2( 278.28, 240.725 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint6"]
 shape = SubResource( 1 )
@@ -77,7 +77,7 @@ __meta__ = {
 }
 
 [node name="WayPoint7" type="KinematicBody2D" parent="BackgroundBeta/WayPoints"]
-position = Vector2( 557.544, 195.488 )
+position = Vector2( 568.688, 229.739 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BackgroundBeta/WayPoints/WayPoint7"]
 shape = SubResource( 1 )
