@@ -10,7 +10,7 @@ func _enter_tree():
 
 func _process(delta):
 	var speed = velocidadDeMovimiento * delta
-	var direction = (moverse_al_waypoint() - self.position).normalized()
+	var direction = (moverse_al_waypoint() - self.global_position).normalized()
 	self.position += direction * speed
 	#print(moverse_al_waypoint())
 
