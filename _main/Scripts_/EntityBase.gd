@@ -7,4 +7,4 @@ func attack(body):
 	print("ejecutar ataque de slime")
 
 func _on_Area2D_body_entered(body):
-	attack(body)
+	print(body)

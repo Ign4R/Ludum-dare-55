@@ -17,7 +17,7 @@ extents = Vector2( 116.769, 104.585 )
 [node name="Node" type="Node"]
 
 [node name="Background" type="Sprite" parent="."]
-position = Vector2( 968.289, 531.199 )
+position = Vector2( 999, 472 )
 scale = Vector2( 1.00387, 0.986668 )
 texture = ExtResource( 5 )
 
@@ -31,7 +31,7 @@ wait_time = 1.5
 [node name="WayPoints" type="Node2D" parent="Background"]
 
 [node name="WayPoint1" type="KinematicBody2D" parent="Background/WayPoints"]
-position = Vector2( -545.181, -175.54 )
+position = Vector2( -532.938, -175.338 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint1"]
 shape = SubResource( 1 )
@@ -40,7 +40,7 @@ __meta__ = {
 }
 
 [node name="WayPoint2" type="KinematicBody2D" parent="Background/WayPoints"]
-position = Vector2( -545.181, 179.19 )
+position = Vector2( -529.949, 127.703 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint2"]
 shape = SubResource( 1 )
@@ -103,7 +103,7 @@ __meta__ = {
 }
 
 [node name="Place1" parent="Background" instance=ExtResource( 3 )]
-position = Vector2( -404.724, -173.513 )
+position = Vector2( -567.803, -357.77 )
 scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
@@ -138,7 +138,6 @@ script = ExtResource( 4 )
 
 [node name="KingSlime" type="Sprite" parent="."]
 position = Vector2( 1768, 138 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 6 )
 
 [node name="Horno" type="Sprite" parent="."]
@@ -164,6 +163,6 @@ margin_right = 1580.12
 margin_bottom = 207.04
 bbcode_text = "Vidas"
 tab_size = 24
-text = "Vida"
+text = "Vidas"
 
 [connection signal="timeout" from="Background/SpawnPoint/Timer" to="Background/SpawnPoint" method="_on_Timer_timeout"]
