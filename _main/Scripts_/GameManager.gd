@@ -1,9 +1,12 @@
 extends Node2D
 class_name Global
 
+var kill_count
+var enemies_max_round
 var slime_current
 var life = 3
 var life_text
+var wave_count
 
 func _ready():
 	life_text = $"../RichTextLabel"
@@ -27,6 +30,13 @@ func instantiate_slime(pos):
 func restar_vida():
 	life -= 1
 	print(life)
+
+func enemy_kill():
+	kill_count+=1
+	if(kill_count >= enemies_max_round and wave_count < 3):
+		enemies_max_round = 0
+		kill_count=0
+		wave_count+=1
 
 func game_over():
 	if(life <= 0):

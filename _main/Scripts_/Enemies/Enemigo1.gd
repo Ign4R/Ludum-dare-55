@@ -24,7 +24,12 @@ func _on_Area2D_body_entered(body):
 	if(contador < array_de_wayPoints.size() - 1):
 	   contador += 1
 	
+	if body.layer==3:		
+		print("ME PEGO EL ENEMIGO")
+		GameManager.enemy_kill()
+
 	if(body.name == "HitBoxHorno"):
+		
 		GameManager.restar_vida()
 		queue_free()
 	
