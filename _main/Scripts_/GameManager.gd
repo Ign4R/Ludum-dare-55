@@ -8,13 +8,7 @@ var life = 3
 var life_text
 onready var wave_count = 0 
 onready var timer = $SpawnPoint/Timer
-
-func _ready():
-	life_text = $"../RichTextLabel"	
-	pass
-	
 var principalMenu = "res://_main/scenes/Menus/MenuDeInicio.tscn"
-
 
 func _process(delta):
 	game_over()
