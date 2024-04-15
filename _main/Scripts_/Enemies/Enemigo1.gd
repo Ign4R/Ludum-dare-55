@@ -20,4 +20,5 @@ func moverse_al_waypoint():
 
 func _on_Area2D_body_entered(body):
 	print(body)
-	contador += 1
+	if(contador < array_de_wayPoints.size() - 1):
+	   contador += 1
