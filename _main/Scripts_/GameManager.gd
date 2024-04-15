@@ -10,10 +10,12 @@ onready var wave_count = 0
 onready var timer = $SpawnPoint/Timer
 
 func _ready():
-	life_text = $"../RichTextLabel"
-	
+	life_text = $"../RichTextLabel"	
 	pass
 	
+var principalMenu = "res://_main/scenes/Menus/MenuDeInicio.tscn"
+
+
 func _process(delta):
 	game_over()
 	
@@ -22,7 +24,7 @@ func instantiate_slime(pos):
 	if slime_current !=null:
 		print(slime_current)
 		var instance = slime_current.instance()
-		add_child(instance)		
+		add_child(instance)
 		instance.position = pos
 		slime_current=null
 	else:
@@ -31,7 +33,6 @@ func instantiate_slime(pos):
 	
 func restar_vida():
 	life -= 1
-	print(life)
 
 func enemy_kill():
 	kill_count+=1
@@ -45,5 +46,5 @@ func enemy_kill():
 
 func game_over():
 	if(life <= 0):
-		print("pausar juego y cargar pantalla de derrota")
+		get_tree().change_scene(principalMenu)
 

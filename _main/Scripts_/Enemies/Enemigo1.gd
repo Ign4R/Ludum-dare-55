@@ -1,6 +1,6 @@
 extends Node2D
 var array_de_wayPoints = []
-var velocidadDeMovimiento = 100
+var velocidadDeMovimiento = 300
 var contador = 0
 var can_attack
 
