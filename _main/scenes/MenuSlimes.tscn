@@ -1,40 +1,50 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=23 format=2]
 
 [ext_resource path="res://_main/scenes/ItemSlime.tscn" type="PackedScene" id=1]
 [ext_resource path="res://_main/scenes/SlimeArea.tscn" type="PackedScene" id=2]
 [ext_resource path="res://_main/scenes/SlimeRange.tscn" type="PackedScene" id=3]
 [ext_resource path="res://_main/sprites/Slimes/Tostada-slime.png" type="Texture" id=4]
 [ext_resource path="res://_main/sprites/Slimes/Papitas-slime.png" type="Texture" id=5]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Pucherito/Pucherito_03.png" type="Texture" id=6]
 [ext_resource path="res://_main/sprites/LayoutBG.png" type="Texture" id=7]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Tosty/Tosty_03.png" type="Texture" id=8]
 [ext_resource path="res://_main/sprites/Slimes/Pot-slime.png" type="Texture" id=9]
 [ext_resource path="res://_main/sprites/Slimes/Milkshake-Slime.png" type="Texture" id=10]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Pucherito/Pucherito_01.png" type="Texture" id=11]
 [ext_resource path="res://_main/scenes/SlimeRangeSuper.tscn" type="PackedScene" id=12]
 [ext_resource path="res://_main/scenes/SlimeAreaSuper.tscn" type="PackedScene" id=13]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Pucherito/Pucherito_02.png" type="Texture" id=14]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Fryman/Fryman_01.png" type="Texture" id=15]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Fryman/Fryman_03.png" type="Texture" id=16]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Cremoncio/Cremoncio_03.png" type="Texture" id=17]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Cremoncio/Cremoncio_02.png" type="Texture" id=18]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Tosty/Tosty_01.png" type="Texture" id=19]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Cremoncio/Cremoncio_01.png" type="Texture" id=20]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Tosty/Tosty_02.png" type="Texture" id=21]
+[ext_resource path="res://_main/sprites/CartasDeSlimes/Fryman/Fryman_02.png" type="Texture" id=22]
 
 [node name="MenuSelection" type="CanvasLayer"]
 
 [node name="LayoutBg" type="Sprite" parent="."]
-position = Vector2( 956, 967 )
-scale = Vector2( 1.13294, 1.44156 )
+position = Vector2( 971, 964 )
+scale = Vector2( 1.15059, 2.37662 )
 texture = ExtResource( 7 )
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
-anchor_left = 0.00260417
-anchor_top = 0.785185
 anchor_right = 1.0099
 anchor_bottom = 0.987963
-margin_left = -8.00001
-margin_top = 13.0002
-margin_right = -25.0079
-margin_bottom = 12.9999
+margin_top = 779.0
+margin_right = -10.0079
+margin_bottom = 11.9999
 rect_pivot_offset = Vector2( 5, 0 )
-custom_constants/separation = 243
-alignment = 1
 
 [node name="SlimeA" parent="HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 154.0
-margin_right = 374.0
-margin_bottom = 219.0
+margin_right = 300.0
+margin_bottom = 300.0
+texture_normal = ExtResource( 11 )
+texture_pressed = ExtResource( 6 )
+texture_hover = ExtResource( 14 )
+texture_disabled = null
 slime = ExtResource( 2 )
 
 [node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA"]
@@ -43,9 +53,13 @@ scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 9 )
 
 [node name="SlimeA2" parent="HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 617.0
-margin_right = 837.0
-margin_bottom = 219.0
+margin_left = 304.0
+margin_right = 604.0
+margin_bottom = 300.0
+texture_normal = ExtResource( 15 )
+texture_pressed = ExtResource( 16 )
+texture_hover = ExtResource( 22 )
+texture_disabled = null
 slime = ExtResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA2"]
@@ -54,9 +68,13 @@ scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 5 )
 
 [node name="SlimeA3" parent="HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 1080.0
-margin_right = 1300.0
-margin_bottom = 219.0
+margin_left = 608.0
+margin_right = 908.0
+margin_bottom = 300.0
+texture_normal = ExtResource( 20 )
+texture_pressed = ExtResource( 17 )
+texture_hover = ExtResource( 18 )
+texture_disabled = null
 slime = ExtResource( 13 )
 
 [node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA3"]
@@ -65,9 +83,13 @@ scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 10 )
 
 [node name="SlimeA4" parent="HBoxContainer" instance=ExtResource( 1 )]
-margin_left = 1543.0
-margin_right = 1763.0
-margin_bottom = 219.0
+margin_left = 912.0
+margin_right = 1212.0
+margin_bottom = 300.0
+texture_normal = ExtResource( 19 )
+texture_pressed = ExtResource( 8 )
+texture_hover = ExtResource( 21 )
+texture_disabled = null
 slime = ExtResource( 12 )
 
 [node name="Sprite" type="Sprite" parent="HBoxContainer/SlimeA4"]

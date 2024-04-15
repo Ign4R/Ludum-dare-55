@@ -1,7 +1,7 @@
 extends Node2D
 
 var array_de_wayPoints = []
-var velocidadDeMovimiento = 30
+var velocidadDeMovimiento = 100
 var contador = 0
 
 func _enter_tree():
@@ -20,5 +20,12 @@ func moverse_al_waypoint():
 
 func _on_Area2D_body_entered(body):
 	print(body)
+	
 	if(contador < array_de_wayPoints.size() - 1):
 	   contador += 1
+	
+	if(body.name == "HitBoxHorno"):
+		GameManager.restar_vida()
+		queue_free()
+	
+

@@ -2,9 +2,9 @@ extends Position2D
 
 onready var enemy1 = preload("res://_main/scenes/Enemies/Enemigo1.tscn")
 
-onready var wave1 = [enemy1, enemy1]
-onready var wave2 = []
-onready var wave3 = []
+onready var wave1 = [enemy1, enemy1, enemy1]
+onready var wave2 = [enemy1, enemy1, enemy1, enemy1]
+onready var wave3 = [enemy1, enemy1, enemy1, enemy1, enemy1]
 onready var wave4 = []
 onready var wave5 = []
 onready var all_waves = [wave1, wave2, wave3, wave4, wave5]

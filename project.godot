@@ -27,7 +27,7 @@ _global_script_class_icons={
 [application]
 
 config/name="LudumDare"
-run/main_scene="res://_main/scenes/EscenaPrincipal.tscn"
+run/main_scene="res://_main/scenes/Menus/MenuDeInicio.tscn"
 
 [autoload]
 
