@@ -106,13 +106,13 @@ __meta__ = {
 }
 
 [node name="Place1" parent="Background" instance=ExtResource( 3 )]
-position = Vector2( -577.764, -307.094 )
+position = Vector2( -633.548, -303.04 )
 scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
 [node name="Place2" parent="Background" instance=ExtResource( 3 )]
 process_priority = 2
-position = Vector2( -211.183, 28.3783 )
+position = Vector2( -318.766, 44.5945 )
 scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
@@ -123,7 +123,7 @@ scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
 [node name="Place4" parent="Background" instance=ExtResource( 3 )]
-position = Vector2( 461.926, -15.4046 )
+position = Vector2( 432.327, 29.3918 )
 scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
@@ -178,7 +178,7 @@ scale = Vector2( 0.680833, 0.803333 )
 texture = ExtResource( 7 )
 
 [node name="HitBoxHorno" type="KinematicBody2D" parent="Horno"]
-position = Vector2( 8.81323, 119.502 )
+position = Vector2( 2.9375, 136.93 )
 
 [node name="ShapeHitBoxHorno" type="CollisionShape2D" parent="Horno/HitBoxHorno"]
 shape = SubResource( 2 )
