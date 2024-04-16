@@ -33,5 +33,7 @@ func _on_Area2D_body_entered(body):
 
 func take_life(damage):
 	life -= damage
+	if(life == 0):
+		GameManager.enemy_kill()
 
 
