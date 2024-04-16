@@ -12,7 +12,7 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "EntityArea",
 "language": "GDScript",
-"path": "res://_main/Scripts_/Slimes_Turret/EntityArea.gd"
+"path": "res://_main/Scripts_/EntityArea.gd"
 }, {
 "base": "Node2D",
 "class": "Global",

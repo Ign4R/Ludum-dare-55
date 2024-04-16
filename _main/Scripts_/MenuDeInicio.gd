@@ -5,5 +5,5 @@ func _on_QuitButton_pressed():
 	
 func _on_PlayButton_pressed():
 	print("HOLAAAAA")
-	get_tree().change_scene("res://_main/scenes/Menus/EscenaPrincipal.tscn")
+	get_tree().change_scene("res://_main/scenes/EscenaPrincipal.tscn")
 

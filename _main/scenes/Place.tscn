@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
+[ext_resource path="res://_main/Scripts_/Buttons/Button_Item_Invoker.gd" type="Script" id=1]
 [ext_resource path="res://_main/scenes/Enemies/Summoning_circle.png" type="Texture" id=2]
 [ext_resource path="res://_main/sprites/Summoning_circle_Gris.png" type="Texture" id=3]
+[ext_resource path="res://_main/sprites/X-removebg-preview.png" type="Texture" id=4]
+[ext_resource path="res://_main/sprites/X-removebg-preview - copia.png" type="Texture" id=5]
 
 [node name="PlaceInvoker" type="Node2D"]
 
@@ -14,3 +17,17 @@ margin_bottom = 77.0
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 stretch_mode = 5
+script = ExtResource( 1 )
+
+[node name="RemoveButton" type="TextureButton" parent="TextureButton"]
+visible = false
+show_behind_parent = true
+margin_left = 335.0
+margin_top = 35.0
+margin_right = 393.0
+margin_bottom = 89.0
+texture_normal = ExtResource( 4 )
+texture_hover = ExtResource( 5 )
+expand = true
+
+[connection signal="pressed" from="TextureButton/RemoveButton" to="TextureButton" method="_on_RemoveButton_pressed"]

@@ -1,0 +1,174 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://_main/Scripts_/SpawnPoint.gd" type="Script" id=1]
+[ext_resource path="res://_main/scenes/Menus/MenuSlimes.tscn" type="PackedScene" id=2]
+[ext_resource path="res://_main/scenes/Place.tscn" type="PackedScene" id=3]
+[ext_resource path="res://_main/Scripts_/GameManager.gd" type="Script" id=4]
+[ext_resource path="res://_main/sprites/Map.png" type="Texture" id=5]
+[ext_resource path="res://_main/sprites/ReySlime/King Slime (1).png" type="Texture" id=6]
+[ext_resource path="res://_main/sprites/ReySlime/Horno.png" type="Texture" id=7]
+[ext_resource path="res://_main/Scripts_/VidasImagenes.gd" type="Script" id=8]
+[ext_resource path="res://_main/sprites/Heart (3).png" type="Texture" id=9]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 18.16
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 116.769, 104.585 )
+
+[node name="Node" type="Node" groups=["waypoints"]]
+
+[node name="Background" type="Sprite" parent="."]
+position = Vector2( 959, 525 )
+scale = Vector2( 1.00387, 0.986668 )
+texture = ExtResource( 5 )
+
+[node name="SpawnPoint" type="Position2D" parent="Background"]
+position = Vector2( -925.71, -196.825 )
+scale = Vector2( 1, 0.999998 )
+z_index = 3
+script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="Background/SpawnPoint"]
+wait_time = 1.5
+
+[node name="WayPoints" type="Node2D" parent="Background"]
+
+[node name="WayPoint1" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( -521.98, -160.135 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint1"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint2" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( -533.934, 170.27 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint2"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint3" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 30.8804, 194.594 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint3"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint4" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 48.5237, -169.459 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint4"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint5" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 349.361, -163.378 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint5"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint6" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 325.739, 146.959 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint6"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint7" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 789.943, 177.365 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint7"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="WayPoint8" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
+position = Vector2( 785.674, -90.4046 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint8"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Place1" parent="Background" instance=ExtResource( 3 )]
+position = Vector2( -633.548, -303.04 )
+scale = Vector2( 0.655549, 0.646241 )
+z_as_relative = false
+
+[node name="Place2" parent="Background" instance=ExtResource( 3 )]
+process_priority = 2
+position = Vector2( -324.743, 41.554 )
+scale = Vector2( 0.655549, 0.646241 )
+z_as_relative = false
+
+[node name="Place3" parent="Background" instance=ExtResource( 3 )]
+process_priority = 2
+position = Vector2( 268.959, -270.608 )
+scale = Vector2( 0.655549, 0.646241 )
+z_as_relative = false
+
+[node name="Place4" parent="Background" instance=ExtResource( 3 )]
+position = Vector2( 535.926, 21.2838 )
+scale = Vector2( 0.655549, 0.646241 )
+z_as_relative = false
+
+[node name="Game_Manager_Node2D" type="Node2D" parent="Background"]
+position = Vector2( -1012.08, -485.472 )
+scale = Vector2( 0.996145, 1.01351 )
+script = ExtResource( 4 )
+
+[node name="MenuSelection" parent="." instance=ExtResource( 2 )]
+
+[node name="KingSlime" type="Sprite" parent="."]
+position = Vector2( 1768, 138 )
+texture = ExtResource( 6 )
+
+[node name="Horno" type="Sprite" parent="."]
+position = Vector2( 1771, 466 )
+scale = Vector2( 0.680833, 0.803333 )
+texture = ExtResource( 7 )
+
+[node name="HitBoxHorno" type="KinematicBody2D" parent="Horno"]
+position = Vector2( 2.9375, 136.93 )
+
+[node name="ShapeHitBoxHorno" type="CollisionShape2D" parent="Horno/HitBoxHorno"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Game_Manager_Node2D" type="Node2D" parent="."]
+script = ExtResource( 4 )
+
+[node name="UI_LIFES" type="Node2D" parent="."]
+position = Vector2( 1697, 109 )
+script = ExtResource( 8 )
+
+[node name="TextureRect1" type="Sprite" parent="UI_LIFES"]
+texture = ExtResource( 9 )
+
+[node name="TextureRect2" type="Sprite" parent="UI_LIFES"]
+position = Vector2( 66, -1 )
+texture = ExtResource( 9 )
+
+[node name="TextureRect3" type="Sprite" parent="UI_LIFES"]
+position = Vector2( 132, -2 )
+texture = ExtResource( 9 )
+
+[connection signal="timeout" from="Background/SpawnPoint/Timer" to="Background/SpawnPoint" method="_on_Timer_timeout"]
