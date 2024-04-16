@@ -8,10 +8,10 @@
 
 [node name="TextureButton" type="TextureButton" parent="."]
 show_behind_parent = true
-margin_left = -48.0
-margin_top = -48.0
-margin_right = 53.0
-margin_bottom = 52.0
+margin_left = -164.0
+margin_top = -43.0
+margin_right = 166.0
+margin_bottom = 77.0
 texture_normal = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 stretch_mode = 5

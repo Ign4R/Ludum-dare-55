@@ -43,7 +43,7 @@ __meta__ = {
 }
 
 [node name="WayPoint2" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
-position = Vector2( -529.949, 127.703 )
+position = Vector2( -533.934, 170.27 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint2"]
 shape = SubResource( 1 )
@@ -52,7 +52,7 @@ __meta__ = {
 }
 
 [node name="WayPoint3" type="KinematicBody2D" parent="Background/WayPoints" groups=["waypoints"]]
-position = Vector2( 36.5699, 185.271 )
+position = Vector2( 30.8804, 194.594 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Background/WayPoints/WayPoint3"]
 shape = SubResource( 1 )
@@ -118,7 +118,7 @@ z_as_relative = false
 
 [node name="Place3" parent="Background" instance=ExtResource( 3 )]
 process_priority = 2
-position = Vector2( 121.243, -282.972 )
+position = Vector2( 119.537, -301.013 )
 scale = Vector2( 0.655549, 0.646241 )
 z_as_relative = false
 
