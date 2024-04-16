@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://_main/Scripts_/SpawnPoint.gd" type="Script" id=1]
-[ext_resource path="res://_main/scenes/MenuSlimes.tscn" type="PackedScene" id=2]
+[ext_resource path="res://_main/scenes/Menus/MenuSlimes.tscn" type="PackedScene" id=2]
 [ext_resource path="res://_main/scenes/Place.tscn" type="PackedScene" id=3]
 [ext_resource path="res://_main/Scripts_/GameManager.gd" type="Script" id=4]
 [ext_resource path="res://_main/sprites/Map.png" type="Texture" id=5]
@@ -132,13 +132,7 @@ position = Vector2( -1012.08, -485.472 )
 scale = Vector2( 0.996145, 1.01351 )
 script = ExtResource( 4 )
 
-[node name="MenuSlimes" parent="." instance=ExtResource( 2 )]
-offset = Vector2( 0, 2 )
-transform = Transform2D( 1, 0, 0, 1, 0, 2 )
-__meta__ = {
-"_editor_description_": "
-"
-}
+[node name="MenuSelection" parent="." instance=ExtResource( 2 )]
 
 [node name="KingSlime" type="Sprite" parent="."]
 position = Vector2( 1768, 138 )

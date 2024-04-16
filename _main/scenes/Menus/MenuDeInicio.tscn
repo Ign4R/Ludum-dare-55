@@ -7,7 +7,7 @@
 [ext_resource path="res://_main/sprites/MenuInicial/Quit_Button_Over.png" type="Texture" id=6]
 [ext_resource path="res://_main/sprites/MenuInicial/Quit_Button.png" type="Texture" id=7]
 [ext_resource path="res://_main/sprites/MenuInicial/Quit_Button_Pressed.png" type="Texture" id=8]
-[ext_resource path="res://_main/scenes/Menus/MenuDeInicio.gd" type="Script" id=10]
+[ext_resource path="res://_main/Scripts_/MenuDeInicio.gd" type="Script" id=10]
 
 [node name="MenuDeInicio" type="Control"]
 anchor_right = 1.0

@@ -1,7 +1,7 @@
 extends Position2D
 
 onready var enemy1 = preload("res://_main/scenes/Enemies/Enemigo1.tscn")
-onready var all_waves = [4, 10, 15]
+onready var all_waves = [1, 1, 1]
 
 var oleadaActual = 0
 var num_enemy = 0

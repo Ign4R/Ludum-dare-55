@@ -8,7 +8,7 @@ var life = 3
 var life_text
 onready var wave_count = 0 
 onready var timer = $SpawnPoint/Timer
-var principalMenu = "res://_main/scenes/Menus/MenuDeInicio.tscn"
+#var principalMenu = "res://_main/scenes/Menus/MenuDeInicio.tscn"
 
 func _process(delta):
 	game_over()
@@ -28,7 +28,7 @@ func instantiate_slime(pos):
 func restar_vida():
 	life -= 1
 
-func enemy_kill():
+func check_kills():
 	kill_count+=1
 	if(kill_count >= enemies_max_round and wave_count < 3):
 		print("CAMBIO DE RONDA")
@@ -40,5 +40,6 @@ func enemy_kill():
 
 func game_over():
 	if(life <= 0):
-		get_tree().change_scene(principalMenu)
+		pass
+		#get_tree().change_scene(principalMenu)
 
