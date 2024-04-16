@@ -10,18 +10,18 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node2D",
+"class": "EntityArea",
+"language": "GDScript",
+"path": "res://_main/Scripts_/EntityArea.gd"
+}, {
+"base": "Node2D",
 "class": "Global",
 "language": "GDScript",
 "path": "res://_main/Scripts_/GameManager.gd"
-}, {
-"base": "Node2D",
-"class": "SlimeBase",
-"language": "GDScript",
-"path": "res://_main/Scripts_/EntityBase.gd"
 } ]
 _global_script_class_icons={
-"Global": "",
-"SlimeBase": ""
+"EntityArea": "",
+"Global": ""
 }
 
 [application]

@@ -14,18 +14,20 @@
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="BackgroundMenu" type="TextureRect" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 963, 541 )
+z_index = 6
 texture = ExtResource( 1 )
 
-[node name="PlayButton" type="TextureButton" parent="BackgroundMenu"]
+[node name="PlayButton" type="TextureButton" parent="Sprite"]
 anchor_left = 0.0859375
 anchor_top = 0.153704
 anchor_right = 0.360333
 anchor_bottom = 0.300111
-margin_right = 0.159973
-margin_bottom = -0.119995
+margin_left = -960.0
+margin_top = -540.0
+margin_right = -959.84
+margin_bottom = -540.12
 texture_normal = ExtResource( 2 )
 texture_pressed = ExtResource( 5 )
 texture_hover = ExtResource( 3 )
@@ -36,11 +38,15 @@ __meta__ = {
 "_edit_use_anchors_": true
 }
 
-[node name="QuitButton" type="TextureButton" parent="BackgroundMenu"]
+[node name="QuitButton" type="TextureButton" parent="Sprite"]
 anchor_left = 0.084375
 anchor_top = 0.327778
 anchor_right = 0.359375
 anchor_bottom = 0.410185
+margin_left = -958.0
+margin_top = -543.0
+margin_right = -958.0
+margin_bottom = -543.0
 texture_normal = ExtResource( 7 )
 texture_pressed = ExtResource( 8 )
 texture_hover = ExtResource( 6 )

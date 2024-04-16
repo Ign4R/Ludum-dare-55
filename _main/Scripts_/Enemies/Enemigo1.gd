@@ -27,9 +27,6 @@ func _on_Area2D_body_entered(body):
 	if(contador < array_de_wayPoints.size() - 1 and body.is_in_group("waypoints")):
 	   contador += 1
 	
-
-		
-
 	if(body.name == "HitBoxHorno"):	
 		GameManager.restar_vida()
 		queue_free()
