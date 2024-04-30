@@ -1,14 +1,12 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://_main/Scripts_/Buttons/Button_Item_Select.gd" type="Script" id=1]
-[ext_resource path="res://_main/sprites/CartasDeSlimes/cuadrado_highlight.png" type="Texture" id=3]
-[ext_resource path="res://_main/sprites/CartasDeSlimes/CuadradoDisabled- copia.png" type="Texture" id=4]
-[ext_resource path="res://_main/sprites/CartasDeSlimes/cuadrado_normal.png" type="Texture" id=5]
+[ext_resource path="res://_main/_scripts/Buttons/Button_Item_Select.gd" type="Script" id=1]
 
 [node name="TextureButton" type="TextureButton"]
 margin_right = 40.0
 margin_bottom = 40.0
-texture_normal = ExtResource( 5 )
-texture_hover = ExtResource( 3 )
-texture_disabled = ExtResource( 4 )
 script = ExtResource( 1 )
+
+[node name="Timer" type="Timer" parent="."]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

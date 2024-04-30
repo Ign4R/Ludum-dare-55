@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://_main/Scripts_/SpawnPoint.gd" type="Script" id=1]
+[ext_resource path="res://_main/_scripts/SpawnPoint.gd" type="Script" id=1]
 [ext_resource path="res://_main/scenes/Menus/MenuSlimes.tscn" type="PackedScene" id=2]
 [ext_resource path="res://_main/scenes/Place.tscn" type="PackedScene" id=3]
-[ext_resource path="res://_main/Scripts_/GameManager.gd" type="Script" id=4]
+[ext_resource path="res://_main/_scripts/GameManager.gd" type="Script" id=4]
 [ext_resource path="res://_main/sprites/Map.png" type="Texture" id=5]
 [ext_resource path="res://_main/sprites/ReySlime/King Slime (1).png" type="Texture" id=6]
 [ext_resource path="res://_main/sprites/ReySlime/Horno.png" type="Texture" id=7]
-[ext_resource path="res://_main/Scripts_/VidasImagenes.gd" type="Script" id=8]
+[ext_resource path="res://_main/_scripts/VidasImagenes.gd" type="Script" id=8]
 [ext_resource path="res://_main/sprites/Heart (3).png" type="Texture" id=9]
 
 [sub_resource type="CircleShape2D" id=1]

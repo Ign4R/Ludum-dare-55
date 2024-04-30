@@ -29,5 +29,4 @@ func spawn_enemies():
 
 func _on_Timer_timeout():
 	oleadaActual = GameManager.wave_count 
-	print("ESTOY?")
 	spawn_enemies()

@@ -12,12 +12,12 @@ _global_script_classes=[ {
 "base": "Node2D",
 "class": "EntityArea",
 "language": "GDScript",
-"path": "res://_main/Scripts_/EntityArea.gd"
+"path": "res://_main/_scripts/EntityArea.gd"
 }, {
 "base": "Node2D",
 "class": "Global",
 "language": "GDScript",
-"path": "res://_main/Scripts_/GameManager.gd"
+"path": "res://_main/_scripts/GameManager.gd"
 } ]
 _global_script_class_icons={
 "EntityArea": "",
@@ -31,7 +31,7 @@ run/main_scene="res://_main/scenes/Menus/MenuDeInicio.tscn"
 
 [autoload]
 
-GameManager="*res://_main/Scripts_/GameManager.gd"
+GameManager="*res://_main/_scripts/GameManager.gd"
 
 [display]
 

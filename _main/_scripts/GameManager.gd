@@ -1,35 +1,30 @@
 extends Node2D
 class_name Global
 
-var button_node
+var place_habilited=false
 var ui_lifes
+onready var timer_place
 onready var kill_count=0
 var enemies_max_round
 var slime_current
+onready var maxtime_place = 5
 var curr_lifes = 3
 onready var wave_count = 0 
 var timer = get_node_or_null("../Background/SpawnPoint/Timer")
 var scene_win = "res://_main/scenes/Menus/Win_Escene.tscn"
 var scene_lose = "res://_main/scenes/Menus/Defeat_Escene.tscn"
-func _ready():
-	print("ENTRE AL GAME MANAGER")
-		
-func _process(delta):
-	print(ui_lifes)
-	pass
-	
+
 # Método estático para instanciar un slime
 func instantiate_slime(pos,node):
-	button_node=node
 	if slime_current !=null:
-		print(slime_current)
-		var instance = slime_current.instance()
-		add_child(instance)
-		instance.position = pos
+		add_child(node)
+		node.position = pos
+		node.timer_destroy()
 		slime_current=null
 	else:
 		print("No seleccionaste ningun slime")
 	# Lógica para instanciar un slime en la posición dada
+
 
 func damage_base():
 	curr_lifes -= 1
@@ -44,12 +39,10 @@ func check_kills():
 	
 func change_wave():
 	print("CAMBIO DE RONDA")
-	print(timer)
 	timer.start()
 	enemies_max_round = 0
 	kill_count=0
 	wave_count+=1
-	print(timer)
 	
 		
 func win():

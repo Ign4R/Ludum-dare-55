@@ -7,8 +7,9 @@
 [ext_resource path="res://_main/sprites/MainMenu/mainmenu_Button_pressed.png" type="Texture" id=5]
 [ext_resource path="res://_main/sprites/MainMenu/mainmenu_Button.png" type="Texture" id=6]
 [ext_resource path="res://_main/sprites/Restart/Restart_Button_Pressed.png" type="Texture" id=7]
-[ext_resource path="res://_main/Scripts_/MainMenuButton.gd" type="Script" id=8]
-[ext_resource path="res://_main/Scripts_/ButtonRestart.gd" type="Script" id=9]
+[ext_resource path="res://_main/_scripts/MainMenuButton.gd" type="Script" id=8]
+[ext_resource path="res://_main/_scripts/ButtonRestart.gd" type="Script" id=9]
+
 
 [node name="Defeat_Escene" type="Node2D"]
 

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://_main/Scripts_/EntityArea.gd" type="Script" id=1]
+[ext_resource path="res://_main/_scripts/EntityArea.gd" type="Script" id=1]
 [ext_resource path="res://_main/sprites/Slimes/Tostada-slime.png" type="Texture" id=2]
 [ext_resource path="res://_main/sprites/AREA_ATTACK.png" type="Texture" id=3]
 
@@ -11,6 +11,8 @@ radius = 1486.77
 scale = Vector2( 0.1, 0.1 )
 script = ExtResource( 1 )
 damage_area = 30
+
+[node name="Timer" type="Timer" parent="."]
 
 [node name="Area2D" type="Area2D" parent="."]
 
@@ -33,5 +35,6 @@ scale = Vector2( 7.51055, 7.44726 )
 z_index = 2
 texture = ExtResource( 3 )
 
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

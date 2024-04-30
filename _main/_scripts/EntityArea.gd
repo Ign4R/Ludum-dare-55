@@ -2,16 +2,15 @@ extends Node2D
 class_name EntityArea
 export (int) var damage_area
 export (int) var attack_interval = 1
+export (int) var max_time=5
 var button_invoker
-var curr_time
-var max_time=5
+var curr_time=0
 var can_attack= false
 onready var enemy = null
 var life_slime
 onready var attack_current = attack_interval
 
 func _ready():
-
 	pass
 
 func _process(delta):
@@ -20,9 +19,9 @@ func _process(delta):
 		if attack_current >= attack_interval:
 			attack()
 
-func destroy():
-	$Timer.stop()
-	queue_free()
+func timer_destroy():
+	print("start timer destroy ")
+	$Timer.start()
 	pass
 func attack():
 	print("ATTACK ON")
@@ -40,13 +39,18 @@ func _on_Area2D_body_entered(body):
 
 func _on_Area2D_body_exited(body):
 	print("HA SALIDO EL ENEMY")
-	can_attack = false
-	var enemy_exit=body.get_node("..")
-	enemy_exit.modulate = Color(1, 1, 1)
-	print("Enemy life EXIT: " + str(enemy_exit.life))
+	if enemy!=null:
+		can_attack = false
+		var enemy_exit=body.get_node("..")
+		if(enemy_exit!=null):
+			enemy_exit.modulate = Color(1, 1, 1)
+			pass # Replace with function body.
+
+func _on_Timer_timeout():
+	curr_time+=1
+	if(curr_time>=GameManager.maxtime_place):
+		print("DESTROY")
+		curr_time=0
+		queue_free()
+		$Timer.stop()
 	pass # Replace with function body.
-
-
-
-
-
